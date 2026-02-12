@@ -13,7 +13,7 @@ export default function InquiryPage() {
 
         // NOTE: Replace these with your actual EmailJS credentials
         // Service ID, Template ID, Public Key
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_2vjma3d', 'template_eozapdl', form.current, 'cZQf4Tev6rhPpsGcI')
             .then((result) => {
                 console.log(result.text);
                 setStatus('success');
