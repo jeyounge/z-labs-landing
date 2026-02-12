@@ -7,8 +7,8 @@ export default function HomePage() {
   const projects = [
     {
       id: 'balance',
-      title: '우즈 밸런스 (Wooz Balance)',
-      desc: '황당하고 재미있는 밸런스 게임! 당신의 선택은?',
+      title: 'VS 밸런스 게임',
+      desc: '이걸 선택한다고? 🤯 당신의 선택 성향을 꿰뚫어 보는 AI 분석! 단순한 게임을 넘어, 친구들과의 논쟁을 종결짓는 도파민 폭발 밸런스 토론장.',
       icon: <Gamepad2 className="w-8 h-8 text-white" />,
       color: 'from-pink-500 to-rose-500',
       link: 'https://balance.z-labs.kr',
@@ -16,8 +16,8 @@ export default function HomePage() {
     },
     {
       id: 'lotto',
-      title: '로또 비전 (Lotto Vision)',
-      desc: 'AI 기반 로또 분석 및 번호 추천 서비스',
+      title: '로또 Z (Lotto Z)',
+      desc: '운도 과학입니다. 🧬 Z-Labs만의 독자적인 "3-Kill 전략"과 정밀한 통계 알고리즘으로 확률의 한계에 도전합니다. 데이터가 증명하는 최적의 번호 조합을 경험하세요.',
       icon: <Sparkles className="w-8 h-8 text-white" />,
       color: 'from-indigo-500 to-purple-500',
       link: 'https://lotto.z-labs.kr',
@@ -25,8 +25,8 @@ export default function HomePage() {
     },
     {
       id: 'lab',
-      title: '연구소 (Lab)',
-      desc: '더 많은 재미있는 아이디어들이 준비 중입니다.',
+      title: 'Z-Lab (연구소)',
+      desc: '세상의 모든 재미를 연구합니다. 🚀 엉뚱한 상상이 현실이 되는 곳, 다음 프로젝트를 기대해주세요!',
       icon: <Rocket className="w-8 h-8 text-white" />,
       color: 'from-slate-500 to-slate-600',
       link: '#',
