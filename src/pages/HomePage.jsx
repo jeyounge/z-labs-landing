@@ -118,9 +118,9 @@ export default function HomePage() {
             <Link to="/privacy" className="text-slate-500 hover:text-rose-500 transition-colors">
               개인정보처리방침 (Privacy Policy)
             </Link>
-            <a href="mailto:contact@z-labs.kr" className="text-slate-500 hover:text-rose-500 transition-colors flex items-center gap-1">
+            <Link to="/inquiry" className="text-slate-500 hover:text-rose-500 transition-colors flex items-center gap-1">
               <Mail className="w-4 h-4" /> 이용 문의 (Contact)
-            </a>
+            </Link>
           </div>
         </div>
       </footer>
