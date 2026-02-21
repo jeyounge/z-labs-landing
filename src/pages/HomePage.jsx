@@ -22,15 +22,6 @@ export default function HomePage() {
       color: 'from-indigo-500 to-purple-500',
       link: 'https://lotto.z-labs.kr',
       status: 'Live'
-    },
-    {
-      id: 'lab',
-      title: 'Z-Lab (연구소)',
-      desc: '세상의 모든 재미를 연구합니다. 🚀 엉뚱한 상상이 현실이 되는 곳, 다음 프로젝트를 기대해주세요!',
-      icon: <Rocket className="w-8 h-8 text-white" />,
-      color: 'from-slate-500 to-slate-600',
-      link: '#',
-      status: 'Coming Soon'
     }
   ];
 
@@ -48,12 +39,41 @@ export default function HomePage() {
               Z-Labs <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-orange-500">.</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed break-keep">
-              세상의 모든 재미를 실험합니다.<br/>
+              세상의 모든 재미를 실험합니다.<br />
               <span className="text-base text-slate-400 mt-2 block font-normal">Experimental Fun Projects by Wooz</span>
             </p>
           </motion.div>
         </div>
       </header>
+
+      {/* About Section - For SEO & AdSense */}
+      <section className="bg-slate-50 border-b border-slate-100 py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+              <Sparkles className="w-8 h-8 text-rose-500" />
+              Z-Labs는 어떤 곳인가요?
+            </h2>
+            <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-medium break-keep">
+              <p>
+                안녕하세요! <strong>Z-Labs(제트랩스)</strong>는 평범한 일상 속에서 마주치는 소소한 호기심들을 캐치하여,
+                독창적이고 혁신적인 웹 브라우저 기반의 스낵 컬처(Snack Culture) 서비스로 구현해내는 크리에이티브 프로젝트 랩입니다.
+              </p>
+              <p>
+                우리는 누구나 한 번쯤 상상해 보았던 재미있는 아이디어들을 분석하고 고도화하여 실제 동작하는 프로덕트로 만들어냅니다.
+                현재 서비스 중인 <strong>'VS 밸런스 게임'</strong>은 다양한 논쟁거리를 통해 사용자들의 성향 데이터를 수집하고 통계화하여
+                시각적인 즐거움을 제공하며, <strong>'로또 Z (Lotto Z)'</strong>는 단순한 운의 영역을 넘어 데이터 과학과 자체 알고리즘을 통한
+                정밀한 분석 인사이트를 제공하는 플랫폼입니다.
+              </p>
+              <p>
+                단순히 앱을 만드는 것을 넘어, 우리는 사용자들에게 <strong>'새로운 시각'</strong>과 <strong>'도파민이 터지는 즐거움'</strong>을
+                선사하는 것을 목표로 합니다. 앞으로도 끊임없는 실험정신을 바탕으로 세상에 없던 재밌고 유익한 콘텐츠들을 지속적으로 연구하고
+                런칭할 예정이오니 많은 관심과 응원 부탁드립니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Projects Grid */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex-grow w-full">
@@ -116,7 +136,10 @@ export default function HomePage() {
           </div>
           <div className="flex gap-6 text-sm">
             <Link to="/privacy" className="text-slate-500 hover:text-rose-500 transition-colors">
-              개인정보처리방침 (Privacy Policy)
+              개인정보처리방침 (Privacy)
+            </Link>
+            <Link to="/terms" className="text-slate-500 hover:text-rose-500 transition-colors">
+              이용약관 (Terms)
             </Link>
             <Link to="/inquiry" className="text-slate-500 hover:text-rose-500 transition-colors flex items-center gap-1">
               <Mail className="w-4 h-4" /> 이용 문의 (Contact)
