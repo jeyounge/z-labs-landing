@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, Tag, ArrowRight, BookOpen } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import Navbar from '../components/Navbar';
+import SEO from '../components/SEO';
 
 const categoryColors = {
   '데이터 분석': 'bg-blue-50 text-blue-700',
@@ -18,6 +19,11 @@ export default function BlogListPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
+      <SEO 
+        title="블로그" 
+        description="Z-Labs 팀이 공유하는 데이터 분석, 리서치 결과, 그리고 서비스 개발 스토리입니다." 
+        url="https://z-labs.kr/blog" 
+      />
       <Navbar />
       <div className="pt-16">
         {/* Hero */}

@@ -1,10 +1,16 @@
 import React from 'react';
 import { Shield, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function PrivacyPage() {
     return (
         <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
+            <SEO 
+                title="개인정보처리방침" 
+                description="Z-Labs 개인정보처리방침입니다. 수집하는 개인정보 항목 및 이용 목적을 확인하세요." 
+                url="https://z-labs.kr/privacy" 
+            />
             <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100">
                 <div className="flex items-center gap-4 mb-8">
                     <Link to="/" className="p-2 hover:bg-slate-100 rounded-full transition-colors">

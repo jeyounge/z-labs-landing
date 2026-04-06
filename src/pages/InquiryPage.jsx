@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Send, ArrowLeft, Mail, CheckCircle, AlertCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import SEO from '../components/SEO';
 
 export default function InquiryPage() {
     const form = useRef();
@@ -26,6 +27,11 @@ export default function InquiryPage() {
 
     return (
         <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
+            <SEO 
+                title="1:1 문의하기" 
+                description="Z-Labs 팀에 보내고 싶은 문의, 제안, 피드백을 자유롭게 남겨주세요." 
+                url="https://z-labs.kr/inquiry" 
+            />
             <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100">
                 <div className="flex items-center gap-4 mb-8">
                     <Link to="/" className="p-2 hover:bg-slate-100 rounded-full transition-colors">

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Sparkles, ExternalLink, Filter, TrendingUp, Target, Shield, ArrowLeft } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import SEO from '../components/SEO';
 
 const features = [
   {
@@ -69,6 +70,11 @@ const faqs = [
 export default function LottoServicePage() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
+      <SEO 
+        title="로또 Z 서비스 스펙" 
+        description="로또 당첨 예측의 새로운 패러다임. 통계 기반 3-Kill 전략을 적용한 로또 번호 분석." 
+        url="https://z-labs.kr/services/lotto" 
+      />
       <Navbar />
       <div className="pt-16">
         {/* Hero */}

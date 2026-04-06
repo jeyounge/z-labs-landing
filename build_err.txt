@@ -1,0 +1,66 @@
+﻿[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m??[39m 38 modules transformed.
+node.exe : [31m??[39m Buil
+d failed in 707ms
+위치 줄:1 문자:1
++ & "C:\Program Files\nodej
+s/node.exe" "C:\Program Fil
+es\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([3  
+  1m??[39m Build failed    
+ in 707ms:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[31merror during build:
+[31msrc/data/blogPosts.js 
+(10:13): Unterminated templ
+ate[31m
+file: [36mC:/source/projec
+t/z-labs-landing/src/data/b
+logPosts.js:10:13[31m
+[33m
+ 8:     readTime: '15遺?,
+ 9:     thumbnail: '?뱤',
+10:     content: `
+                 ^
+11: ## 濡쒕삉 踰덊샇?먮룄 ?⑦꽩???덉쓣源
+?
+[31m
+    at getRollupError (file
+:///C:/source/project/z-lab
+s-landing/node_modules/roll
+up/dist/es/shared/parseAst.
+js:402:41)
+    at ParseError.initialis
+e (file:///C:/source/projec
+t/z-labs-landing/node_modul
+es/rollup/dist/es/shared/no
+de-entry.js:14465:28)
+    at convertNode (file://
+/C:/source/project/z-labs-l
+anding/node_modules/rollup/
+dist/es/shared/node-entry.j
+s:16437:10)
+    at convertProgram (file
+:///C:/source/project/z-lab
+s-landing/node_modules/roll
+up/dist/es/shared/node-entr
+y.js:15677:12)
+    at Module.setSource (fi
+le:///C:/source/project/z-l
+abs-landing/node_modules/ro
+llup/dist/es/shared/node-en
+try.js:17392:24)
+    at async ModuleLoader.a
+ddModuleSource (file:///C:/
+source/project/z-labs-landi
+ng/node_modules/rollup/dist
+/es/shared/node-entry.js:21
+474:13)[39m

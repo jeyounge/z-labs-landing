@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Gamepad2, Sparkles, Mail, ExternalLink, BookOpen, ArrowRight, Calendar, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import SEO from '../components/SEO';
 import { getRecentPosts } from '../data/blogPosts';
 
 const categoryColors = {
@@ -41,6 +42,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-slate-50 selection:bg-rose-100 selection:text-rose-900 font-sans flex flex-col">
+      <SEO />
       <Navbar />
 
       {/* Hero Section */}

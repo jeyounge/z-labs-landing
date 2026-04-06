@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, Tag, ArrowLeft, ArrowRight } from 'lucide-react';
 import { getBlogPostBySlug, blogPosts } from '../data/blogPosts';
 import Navbar from '../components/Navbar';
+import SEO from '../components/SEO';
 
 const categoryColors = {
   '데이터 분석': 'bg-blue-50 text-blue-700',
@@ -130,6 +131,12 @@ export default function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
+      <SEO 
+        title={post.title} 
+        description={post.summary} 
+        url={`https://z-labs.kr/blog/${post.slug}`} 
+        type="article"
+      />
       <Navbar />
       <div className="pt-16">
         {/* Header */}
@@ -197,6 +204,29 @@ export default function BlogDetailPage() {
               </Link>
             )}
           </div>
+
+          {/* Related Posts */}
+          <div className="mt-16 pt-10 border-t border-slate-200">
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">관련 글 보기</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {sorted
+                .filter(p => p.slug !== slug && p.category === post.category)
+                .slice(0, 2)
+                .map((relatedPost) => (
+                  <Link 
+                    key={relatedPost.slug} 
+                    to={`/blog/${relatedPost.slug}`}
+                    className="block p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
+                  >
+                    <div className="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                      <Tag className="w-3 h-3" /> {relatedPost.category}
+                    </div>
+                    <h4 className="font-bold text-slate-800 line-clamp-2">{relatedPost.title}</h4>
+                  </Link>
+              ))}
+            </div>
+          </div>
+
 
           {/* Back to list */}
           <div className="mt-8 text-center">

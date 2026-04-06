@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Gamepad2, ExternalLink, BarChart2, Users, Zap, TrendingUp, ArrowLeft } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import SEO from '../components/SEO';
 
 const features = [
   {
@@ -45,6 +46,11 @@ const faqs = [
 export default function BalanceServicePage() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
+      <SEO 
+        title="VS 밸런스 게임 서비스 스펙" 
+        description="당신의 취향을 데이터로 증명하는 논쟁 종결 플랫폼. VS 밸런스 게임의 상세 스펙과 기능." 
+        url="https://z-labs.kr/services/balance" 
+      />
       <Navbar />
       <div className="pt-16">
         {/* Hero */}
