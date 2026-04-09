@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Gamepad2, Sparkles, Mail, ExternalLink, BookOpen, ArrowRight, Calendar, Clock } from 'lucide-react';
+import { Gamepad2, Sparkles, Mail, ExternalLink, BookOpen, ArrowRight, Calendar, Clock, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import SEO from '../components/SEO';
