@@ -37,6 +37,16 @@ export default function HomePage() {
       link: 'https://lotto.z-labs.kr',
       detailLink: '/services/lotto',
       status: 'Live'
+    },
+    {
+      id: 'baseball',
+      title: '우제트 베이스볼',
+      desc: '야구는 데이터 놀이입니다. ⚾ AI가 분석하는 승부 예측과 실시간 KBO 데이터를 통해 승리의 확률을 포착하세요. 단순한 중계를 넘어선 깊이 있는 인사이트를 제공합니다.',
+      icon: <TrendingUp className="w-8 h-8 text-white" />,
+      color: 'from-emerald-500 to-teal-500',
+      link: 'http://wooz.z-labs.kr/',
+      detailLink: '/services/baseball',
+      status: 'Live'
     }
   ];
 
@@ -111,6 +121,13 @@ export default function HomePage() {
                 과거 수백 회차의 당첨 번호에서 추출한 빈도수 트렌드, 모서리/십자 배열 패턴, 뜨거운 끝수(Hot Digit) 분석 등을 통해
                 독자적인 <strong>'3-KILL 전략'</strong>과 <strong>'5-KILL 챌린지 모드'</strong>를 고안해 냈습니다.
                 통계적으로 출현 확률이 극도로 낮은 번호들을 수학적으로 완벽히 배제함으로써 예측 정확도의 혁신적 도약을 목표로 하고 있습니다.
+              </p>
+              <h3 className="text-xl font-bold text-slate-800 mt-8 mb-2 border-b border-slate-100 pb-2">⚾ 우제트 베이스볼: AI 기반 KBO 데이터 분석</h3>
+              <p>
+                최근 런칭한 <strong>'우제트 베이스볼(WooZ Baseball)'</strong>은 야구라는 스포츠가 가진 방대한 데이터를 AI 알고리즘으로 재해석합니다.
+                실시간 KBO 경기 데이터와 과거 수만 건의 매치 데이터를 결합하여 각 팀의 승리 확률을 정밀하게 계산하고,
+                단순한 점수를 넘어 팀 간의 상성, 투수와 타자의 심리적 지표까지 고려한 예측 모델을 제시합니다.
+                데이터가 말해주는 스포츠의 이면을 우제트 베이스볼에서 확인해 보세요.
               </p>
               <p className="mt-8">
                 단순히 앱을 만드는 것을 넘어, 우리는 사용자들에게 <strong>'새로운 시각'</strong>과 <strong>'도파민이 터지는 즐거움'</strong>을

@@ -22,6 +22,7 @@ export default function Navbar() {
     { to: '/blog', label: '블로그' },
     { to: '/services/balance', label: 'VS 밸런스 게임' },
     { to: '/services/lotto', label: '로또 Z' },
+    { to: '/services/baseball', label: '우제트 베이스볼' },
     { to: '/inquiry', label: '문의' },
   ];
 
