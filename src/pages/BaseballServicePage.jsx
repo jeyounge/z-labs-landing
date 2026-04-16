@@ -90,7 +90,7 @@ export default function BaseballServicePage() {
                 </div>
                 <div>
                   <span className="inline-flex items-center gap-1 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold mb-2">
-                    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> 오늘 배포 완료
+                    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> 라이브 서비스 중
                   </span>
                   <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">우제트 베이스볼 (WooZ Baseball)</h1>
                 </div>
