@@ -212,7 +212,7 @@ export default function BlogDetailPage() {
                 .map((relatedPost) => (
                   <Link 
                     key={relatedPost.slug} 
-                    to={`/blog/${relatedPost.slug}`}
+                    href={`/blog/${relatedPost.slug}`}
                     className="block p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
                   >
                     <div className="flex items-center gap-2 mb-2 text-xs text-slate-500">
