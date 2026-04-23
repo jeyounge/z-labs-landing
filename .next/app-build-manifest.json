@@ -1,0 +1,101 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/app/_not-found/page-0745e087738214f0.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/css/68ecb8ea7312b13d.css",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/layout-b5daaa8c56b6f7cf.js"
+    ],
+    "/blog/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/641-2477775fcb0ed48c.js",
+      "static/chunks/136-cfe6556fe99b869e.js",
+      "static/chunks/app/blog/page-9b05a155a419a50e.js"
+    ],
+    "/inquiry/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/inquiry/page-497570ca0660866a.js"
+    ],
+    "/privacy/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/privacy/page-b65e3b336cb11d73.js"
+    ],
+    "/blog/[slug]/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/641-2477775fcb0ed48c.js",
+      "static/chunks/136-cfe6556fe99b869e.js",
+      "static/chunks/app/blog/[slug]/page-3f8729669eb25828.js"
+    ],
+    "/services/balance/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/641-2477775fcb0ed48c.js",
+      "static/chunks/app/services/balance/page-74d6b39dfdc37ebd.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/641-2477775fcb0ed48c.js",
+      "static/chunks/136-cfe6556fe99b869e.js",
+      "static/chunks/app/page-a95a7a8758eb2a4d.js"
+    ],
+    "/services/baseball/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/641-2477775fcb0ed48c.js",
+      "static/chunks/app/services/baseball/page-aed60972fc60258b.js"
+    ],
+    "/terms/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/terms/page-b65e3b336cb11d73.js"
+    ],
+    "/services/lotto/page": [
+      "static/chunks/webpack-15014a1573df4dd2.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-4f212684648fcab9.js",
+      "static/chunks/main-app-8e27b694edc13958.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/641-2477775fcb0ed48c.js",
+      "static/chunks/app/services/lotto/page-9ea2fe97022cc0da.js"
+    ]
+  }
+}

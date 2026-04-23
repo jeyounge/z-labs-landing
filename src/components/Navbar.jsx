@@ -1,11 +1,13 @@
+"use client";
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 10);
@@ -15,7 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setMenuOpen(false);
-  }, [location]);
+  }, [pathname]);
 
   const links = [
     { to: '/', label: '홈' },
@@ -31,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 font-extrabold text-xl text-slate-900 tracking-tight">
+          <Link href="/" className="flex items-center gap-2 font-extrabold text-xl text-slate-900 tracking-tight">
             Z-Labs <span className="text-rose-500">.</span>
           </Link>
 
@@ -40,9 +42,9 @@ export default function Navbar() {
             {links.map((link) => (
               <Link
                 key={link.to}
-                to={link.to}
+                href={link.to}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === link.to
+                  pathname === link.to
                     ? 'bg-rose-50 text-rose-600'
                     : 'text-slate-600 hover:text-rose-500 hover:bg-slate-50'
                 }`}
@@ -69,9 +71,9 @@ export default function Navbar() {
               {links.map((link) => (
                 <Link
                   key={link.to}
-                  to={link.to}
+                  href={link.to}
                   className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors duration-200 ${
-                    location.pathname === link.to
+                    pathname === link.to
                       ? 'bg-rose-50 text-rose-600'
                       : 'text-slate-700 hover:bg-slate-50'
                   }`}
