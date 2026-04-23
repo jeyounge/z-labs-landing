@@ -19,6 +19,7 @@ const staticRoutes = [
   '',
   '/blog',
   '/services/balance',
+  '/services/baseball',
   '/services/lotto',
   '/privacy',
   '/terms',

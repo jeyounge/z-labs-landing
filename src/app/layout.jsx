@@ -12,12 +12,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <head>
-        <Script
+        <meta name="google-adsense-account" content="ca-pub-3270769447461406" />
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270769447461406"
           crossOrigin="anonymous"
-          strategy="lazyOnload"
-        />
+        ></script>
       </head>
       <body>
         <Navbar />
