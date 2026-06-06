@@ -8,6 +8,45 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '로또 Z의 5-KILL 전략이란 무엇인가요?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '5-KILL 전략은 1,000회차 이상의 로또 데이터를 분석하여 통계적으로 출현 확률이 극히 낮은 번호 패턴 5가지를 배제하는 알고리즘입니다. 수학적 확률론에 기반한 번호 조합 전략입니다.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '로또 Z는 당첨을 보장하나요?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '아니요. 로또 Z는 통계적 분석 도구로, 당첨을 보장하지 않습니다. 로또는 확률 게임이며, 분석 결과는 참고용으로만 활용하시기 바랍니다.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '로또 Z는 무료로 이용할 수 있나요?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '네, 로또 Z의 기본 기능은 무료로 제공됩니다. 회원가입 없이 바로 이용 가능합니다.',
+      },
+    },
+  ],
+};
+
 export default function LottoServiceLayout({ children }) {
-  return <>{children}</>;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      {children}
+    </>
+  );
 }

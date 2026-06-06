@@ -1,11 +1,25 @@
 import './globals.css';
 import Navbar from '../components/Navbar';
-import Script from 'next/script';
 
 export const metadata = {
   title: 'Z-Labs | 세상의 모든 재미를 실험합니다',
   description: 'Z-Labs는 세상의 모든 재미를 실험하는 프로젝트 랩입니다. VS 밸런스 게임, 로또 번호 분석 시스템 등 혁신적인 웹 서비스를 개발하고 제공합니다.',
   keywords: 'Z-Labs, 밸런스 게임, 로또 분석, 웹 서비스, 실험적 프로젝트',
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Z-Labs',
+  url: 'https://z-labs.kr',
+  logo: 'https://z-labs.kr/favicon.ico',
+  description: 'Z-Labs는 세상의 모든 재미를 실험하는 크리에이티브 프로젝트 랩입니다.',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'contact@z-labs.kr',
+    contactType: 'customer service',
+  },
+  sameAs: ['https://z-labs.kr'],
 };
 
 export default function RootLayout({ children }) {
@@ -18,6 +32,10 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270769447461406"
           crossOrigin="anonymous"
         ></script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </head>
       <body>
         <Navbar />

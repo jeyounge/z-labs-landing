@@ -9,7 +9,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = getBlogPostBySlug(decodeURIComponent(slug));
-  
+
   if (!post) {
     return {
       title: '게시글을 찾을 수 없습니다 | Z-Labs 블로그',
@@ -31,6 +31,31 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function BlogDetailLayout({ children }) {
-  return <>{children}</>;
+export default async function BlogDetailLayout({ children, params }) {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(decodeURIComponent(slug));
+
+  const articleSchema = post ? {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.summary,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { '@type': 'Organization', name: 'Z-Labs', url: 'https://z-labs.kr' },
+    publisher: { '@type': 'Organization', name: 'Z-Labs', url: 'https://z-labs.kr' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://z-labs.kr/blog/${post.slug}` },
+  } : null;
+
+  return (
+    <>
+      {articleSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      )}
+      {children}
+    </>
+  );
 }
